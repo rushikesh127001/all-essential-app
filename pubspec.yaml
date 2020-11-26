@@ -22,7 +22,7 @@ dependencies:
   sqflite: any
   path_provider: any
   intl: ^0.15.7
-  firebase_auth: ^0.16.1
+  firebase_auth: ^0.14.0+5
   cloud_firestore: ^0.13.6
   provider: any
   google_sign_in: ^4.5.1
