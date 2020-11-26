@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "457010157402",
+    "firebase_url": "https://the-essentials-app-5656.firebaseio.com",
+    "project_id": "the-essentials-app-5656",
+    "storage_bucket": "the-essentials-app-5656.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457010157402:android:c42d781a16164b70460563",
+        "android_client_info": {
+          "package_name": "com.example.todo_list"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457010157402-cuhuh4dmmibph9a1tkji8en6gc25ts9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW3nMMV_7BCtRBD_3w8Sr3nWWbT4OpHcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457010157402-cuhuh4dmmibph9a1tkji8en6gc25ts9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

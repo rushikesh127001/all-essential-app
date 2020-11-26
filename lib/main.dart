@@ -19,7 +19,7 @@ class TodoApp extends StatelessWidget {
 		    primarySwatch: Colors.blue
 	    ),
 	    home: Scaffold(
-				body: Center(child: Text("Go To Navbar"),),
+				body: MainPage(),//Center(child: Text("Go To Navbar"),),
 				drawer: AppDrawer(),
 				appBar: AppBar(
 					title: Text("The Essential Utility App"),
@@ -28,3 +28,32 @@ class TodoApp extends StatelessWidget {
     );
   }
 }
+
+class MainPage extends StatefulWidget {
+  @override
+  _MainPageState createState() => _MainPageState();
+}
+
+class _MainPageState extends State<MainPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+			child: LoginScreen(),
+		);
+  }
+}
+
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+			child: Text("hii"),
+		);
+  }
+}
+
