@@ -41,7 +41,7 @@ class DatabaseHelper {
     String path = directory.path + 'users.db';
 
     // Open/create the database at a given path
-    var usersDatabase = await openDatabase(path, version: 1, onCreate: _createDb);
+    var usersDatabase = await openDatabase(path, version: 1, onCreate: _createDb,onConfigure: _onConfigure);
     return usersDatabase;
   }
 
@@ -49,6 +49,9 @@ class DatabaseHelper {
 
     await db.execute('CREATE TABLE $todoTable($colId INTEGER PRIMARY KEY AUTOINCREMENT, $colPin INTEGER, '
         '$colMobilenum INTEGER, $colDate TEXT)');
+  }
+  static _onConfigure(Database db) async {
+    await db.execute('PRAGMA foreign_keys = ON');
   }
 
   // Fetch Operation: Get all todo objects from database
